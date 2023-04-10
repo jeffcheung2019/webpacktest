@@ -12,7 +12,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
-    modules: ["src", "node_modules"],
+    modules: ["src", "node_modules", "assets"],
   },
   module: {
     rules: [
@@ -56,6 +56,13 @@ module.exports = {
           dataUrlCondition: {
             maxSize: 8192,
           },
+        },
+      },
+      {
+        test: /\.json$/i,
+        type: "json",
+        generator: {
+          filename: "json/[name][ext][query]",
         },
       },
     ],

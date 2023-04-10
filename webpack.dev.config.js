@@ -58,6 +58,13 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.json$/i,
+        type: "json",
+        generator: {
+          filename: "json/[name][ext][query]",
+        },
+      },
     ],
   },
   plugins: [

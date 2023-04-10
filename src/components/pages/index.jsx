@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss'
+import config from 'utils/config.json'
 
 class Pages extends React.Component {
     constructor() {
@@ -11,6 +12,9 @@ class Pages extends React.Component {
             <div>page 1</div>
             <div>page 2</div>
             <div>page 3</div>
+            {
+                JSON.stringify(config, null, 2)
+            }
         </div>;
     }
 }
