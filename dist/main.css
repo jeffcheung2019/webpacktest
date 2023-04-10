@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+@font-face {
+    font-family: 'comic_font';
+    src: url(/fonts/TalkComic.ttf) format('truetype');
+}
+  
+.pages-wrapper{padding:50px;background-color:black}.pages-wrapper div{background-color:yellow;color:black;font-family:comic_font}
+
